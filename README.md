@@ -4,7 +4,7 @@ Welcome to my **Personal Portfolio Website**, built using modern frontend techno
 
 ## 🖥️ Live Preview
 
-🌐 [Visit Portfolio](https://your-portfolio-link.com)
+🌐 [Visit Portfolio](https://my-portfolio-chi-beige-42.vercel.app/)
 
 ## 📌 Features
 
@@ -50,8 +50,8 @@ This portfolio showcases my skills in:
 Feel free to reach out via:
 
 - 📧 Email: talhalko1@gmail.com 
-- 💼 LinkedIn: https://www.linkedin.com/in/mohdtalha123
-- 💻 GitHub: https://github.com/Mohd-Talha-7
+- 💼 LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohdtalha123/)  
+- 💻 GitHub: [GitHub](https://github.com/Mohd-Talha-7)
 
 ---
 
