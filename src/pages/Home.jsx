@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Button, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MotionBox = motion(Box);
 
@@ -71,20 +72,23 @@ const Home = () => {
             variant="contained"
             color="primary"
             size="large"
-            href="/projects"
+            component={Link}  // Use Link component for navigation
+            to="/projects"    // Specify the 'to' prop for the route
             sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
-            View My Work
-          </Button>
+          View My Work
+        </Button>
+
           <Button
             variant="outlined"
             color="primary"
             size="large"
-            href="/contact"
+            component={Link}  // Use Link component for navigation
+            to="/contact"     // Specify the 'to' prop for the route
             sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
-            Contact Me
-          </Button>
+          Contact Me
+        </Button>
         </Stack>
       </Container>
     </MotionBox>
