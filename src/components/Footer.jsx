@@ -12,7 +12,7 @@ const Footer = () => {
       sx={{
         py: 2,
         px: 2,
-        position: 'fixed', // ✅ Fixed at bottom
+        position: 'fixed',
         bottom: 0,
         left: 0,
         width: '100%',
@@ -20,54 +20,79 @@ const Footer = () => {
         borderTop: '1px solid #ddd',
         textAlign: 'center',
         zIndex: 999,
+        maxWidth: '100%',
+        overflowX: 'auto',
       }}
     >
-      <Typography variant="body2" color="text.secondary">
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        sx={{
+          fontSize: {
+            xs: '0.75rem', // Small screen
+            sm: '0.85rem',
+            md: '1rem', // Medium and up
+          },
+        }}
+      >
         © {new Date().getFullYear()} MyPortfolio. All rights reserved.
       </Typography>
 
-      <Stack direction="row" justifyContent="center" spacing={3} mt={1}>
-        <Link
-          href="https://github.com/Mohd-Talha-7"
-          target="_blank"
-          underline="hover"
-          color="inherit"
-          display="flex"
-          alignItems="center"
-        >
-          <GitHubIcon sx={{ mr: 0.5 }} /> GitHub
-        </Link>
-
-        <Link
-          href="https://www.linkedin.com/in/mohdtalha123/"
-          target="_blank"
-          underline="hover"
-          color="inherit"
-          display="flex"
-          alignItems="center"
-        >
-          <LinkedInIcon sx={{ mr: 0.5 }} /> LinkedIn
-        </Link>
-
-        <Link
-          href="mailto:talhalko1@gmail.com"
-          underline="hover"
-          color="inherit"
-          display="flex"
-          alignItems="center"
-        >
-          <EmailIcon sx={{ mr: 0.5 }} /> Email
-        </Link>
-
-        <Link
-          href="tel:+919198412545"
-          underline="hover"
-          color="inherit"
-          display="flex"
-          alignItems="center"
-        >
-          <PhoneIcon sx={{ mr: 0.5 }} /> Phone
-        </Link>
+      <Stack
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        spacing={2}
+        mt={1}
+        sx={{
+          flexWrap: 'wrap',
+          px: 1,
+        }}
+      >
+        {/* Reusable link style for consistency */}
+        {[
+          {
+            href: 'https://github.com/Mohd-Talha-7',
+            icon: <GitHubIcon fontSize="small" sx={{ mr: 0.5 }} />,
+            text: 'GitHub',
+          },
+          {
+            href: 'https://www.linkedin.com/in/mohdtalha123/',
+            icon: <LinkedInIcon fontSize="small" sx={{ mr: 0.5 }} />,
+            text: 'LinkedIn',
+          },
+          {
+            href: 'mailto:talhalko1@gmail.com',
+            icon: <EmailIcon fontSize="small" sx={{ mr: 0.5 }} />,
+            text: 'Email',
+          },
+          {
+            href: 'tel:+919198412545',
+            icon: <PhoneIcon fontSize="small" sx={{ mr: 0.5 }} />,
+            text: 'Phone',
+          },
+        ].map(({ href, icon, text }) => (
+          <Link
+            key={text}
+            href={href}
+            target="_blank"
+            underline="hover"
+            color="inherit"
+            display="flex"
+            alignItems="center"
+            sx={{
+              fontSize: {
+                xs: '0.75rem',
+                sm: '0.85rem',
+                md: '1rem',
+              },
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {icon}
+            {text}
+          </Link>
+        ))}
       </Stack>
     </Box>
   );

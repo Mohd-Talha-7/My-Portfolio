@@ -16,17 +16,20 @@ const Home = () => {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-        px: 2,
+        px: { xs: 2, sm: 3, md: 4 },
         backgroundColor: '#f9f9f9',
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="md" sx={{ mt: 10, pb: 6 }}>
         <Typography
           variant="h3"
           component="h1"
           fontWeight="bold"
           gutterBottom
           color="primary"
+          sx={{
+            fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+          }}
         >
           Hi, I'm Talha 👋
         </Typography>
@@ -36,6 +39,10 @@ const Home = () => {
           fontWeight="medium"
           color="text.secondary"
           gutterBottom
+          sx={{
+            fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.7rem' },
+            px: { xs: 1, sm: 2, md: 0 },
+          }}
         >
           Web Developer | AI & ML | Building Scalable & Smart Applications | Innovating with Data & Automation
         </Typography>
@@ -43,19 +50,29 @@ const Home = () => {
         <Typography
           variant="body1"
           color="text.secondary"
-          sx={{ mt: 2 }}
+          sx={{
+            mt: 2,
+            fontSize: { xs: '0.9rem', sm: '1rem' },
+            px: { xs: 1, sm: 2, md: 0 },
+          }}
         >
           I'm a Web Developer passionate about crafting high-performance web applications
           with clean architecture and intelligent automation. My work blends modern frontend frameworks
           with robust backend systems, and I'm driven by solving real-world problems using AI, ML, and data-driven insights.
         </Typography>
 
-        <Stack direction="row" spacing={2} justifyContent="center" sx={{ mt: 4 }}>
+        <Stack
+          direction={{ xs: 'column', sm: 'row' }}
+          spacing={2}
+          justifyContent="center"
+          sx={{ mt: 4 }}
+        >
           <Button
             variant="contained"
             color="primary"
             size="large"
             href="/projects"
+            sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
             View My Work
           </Button>
@@ -64,6 +81,7 @@ const Home = () => {
             color="primary"
             size="large"
             href="/contact"
+            sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
             Contact Me
           </Button>
