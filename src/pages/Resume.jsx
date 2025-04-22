@@ -8,7 +8,7 @@ const MotionBox = motion(Box);
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Resume.pdf'; // Make sure this path is correct inside your `public/` folder
+    link.href = '/Resume.pdf';
     link.download = 'Mohd_Talha_Resume.pdf';
     link.click();
   };

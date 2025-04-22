@@ -49,7 +49,6 @@ const Footer = () => {
           px: 1,
         }}
       >
-        {/* Reusable link style for consistency */}
         {[
           {
             href: 'https://github.com/Mohd-Talha-7',

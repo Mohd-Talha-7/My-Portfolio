@@ -14,10 +14,10 @@ const Contact = () => {
   const onSubmit = () => {
     emailjs
       .sendForm(
-        'service_94bso8b',        // 🔁 Replace with your EmailJS Service ID
-        'template_h65osqr',       // 🔁 Replace with your EmailJS Template ID
+        'service_94bso8b',
+        'template_h65osqr',
         formRef.current,
-        'bt5XqtVvDuLLZtpw8'        // 🔁 Replace with your EmailJS Public Key
+        'bt5XqtVvDuLLZtpw8'
       )
       .then(
         () => {

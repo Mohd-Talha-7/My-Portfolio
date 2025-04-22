@@ -72,8 +72,8 @@ const Home = () => {
             variant="contained"
             color="primary"
             size="large"
-            component={Link}  // Use Link component for navigation
-            to="/projects"    // Specify the 'to' prop for the route
+            component={Link}
+            to="/projects"
             sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
           View My Work
@@ -83,8 +83,8 @@ const Home = () => {
             variant="outlined"
             color="primary"
             size="large"
-            component={Link}  // Use Link component for navigation
-            to="/contact"     // Specify the 'to' prop for the route
+            component={Link}
+            to="/contact"
             sx={{ width: { xs: '100%', sm: 'auto' } }}
           >
           Contact Me

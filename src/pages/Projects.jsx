@@ -9,14 +9,14 @@ const projects = [
     title: 'DevTrack – Task Manager for Developers',
     description: `A full-stack task management app to help developers organize tasks with categories, priorities, and deadline tracking.`,
     techStack: 'React.js, Node.js, Express.js, MongoDB, Material UI',
-    demo: 'https://devtrack-kwxt.onrender.com', // Replace with your actual demo link
+    demo: 'https://devtrack-kwxt.onrender.com',
     github: 'https://github.com/Mohd-Talha-7/DevTrack'
   },
   {
     title: 'WanderLust – Travel Listing Web App',
     description: `A dynamic travel platform with secure auth, image uploads, and responsive design for travel listing and discovery.`,
     techStack: 'Node.js, Express.js, MongoDB Atlas, EJS, Bootstrap, Cloudinary, Passport.js',
-    demo: 'https://majorproject.onrender.com', // Replace with your actual demo link
+    demo: 'https://majorproject.onrender.com',
     github: 'https://github.com/Mohd-Talha-7/MajorProject'
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     title: 'React Live Code Editor with AI Integration',
     description: `A real-time React code editor with AI-generated component support, terminal emulator, and dynamic code preview.`,
     techStack: 'React.js, Sandpack, Node.js, Express.js, XTerm.js, Gemini API',
-    demo: 'https://live-react-code-editor.onrender.com', // Replace with your actual demo link
+    demo: 'https://live-react-code-editor.onrender.com',
     github: 'https://github.com/Mohd-Talha-7/live-react-code-editor'
   },
   {
